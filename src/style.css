@@ -50,8 +50,6 @@ h1 {
 .scorer {
   border: var(--main-border);
   min-width: 15rem;
-}
-
   list-style: none;
   padding: 15px;
 }
