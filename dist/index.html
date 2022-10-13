@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Leaderboard</title>
     <script src="https://kit.fontawesome.com/05c5795d1a.js" crossorigin="anonymous"></script>
 <script defer src="main.js"></script><script defer src="main.js"></script></head>
 <body>
-    <h1>Leaderboard</h1>
-    <div>
-        <div>
-            <h1>Recent Scores</h1>
-            <button>Refresh</button>
-        </div>
-        <div>
-            <ul></ul>
-        </div>
-    </div>
-    <div>
-        <h1>Add your score</h1>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Score">
-        <button>Add score</button>
-    </div>
+	<h1>Leaderboard</h1>
+	<div class="big-container">
+			<div class="container-left">
+					<div class="c1r1">
+							<h2>Recent Scores</h2>
+							<button id="refreshbtn">Refresh</button>
+					</div>
+					<div class="c1r2">
+							<ul id="leaderboard">
+								<li class="scorer">Name: Santiago | Score: 10</li>
+								<li class="scorer">Name: Carlos | Score: 6</li>
+								<li class="scorer">Name: Agoitnas | Score: 7</li>
+								<li class="scorer">Name: Drak | Score: 11</li>
+							</ul>
+					</div>
+			</div>
+			<div class="container-right">
+					<h2>Add your score</h2>
+					<input type="text" id="name" placeholder="Name">
+					<input type="text" id="score" placeholder="Score">
+					<button id="addbtn">Add score</button>
+			</div>
+	</div>
 </body>
 </html>
