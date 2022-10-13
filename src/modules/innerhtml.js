@@ -7,7 +7,6 @@ const writeList = () => {
     <li class="scorer">Name: ${data.name} | Score: ${data.score}</li>
   `)
     .join(' ');
-    console.log('hi');
 };
 
 export default writeList;
