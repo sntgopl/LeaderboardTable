@@ -13,8 +13,10 @@ addBtn.addEventListener('click', (e) => {
   const leader = new Leader(nameIn.value, scoreIn.value);
   leader.add();
   writeList();
-  // nameIn.value = '';
-  // scoreIn.value = '';
+  setTimeout(() => {
+    nameIn.value = '';
+    scoreIn.value = '';
+  }, 1);
 });
 
 refreshBtn.addEventListener('click', () => {
