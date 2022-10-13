@@ -63,7 +63,7 @@ body {
 
 #name {
   border: var(--main-border);
-  background-color: none;
+  background-color: white;
   padding: 1rem;
 }
 
@@ -74,7 +74,7 @@ body {
 
 #score {
   border: var(--main-border);
-  background-color: none;
+  background-color: white;
   padding: 1rem;
 }
 
