@@ -9,12 +9,7 @@ body {
   width: 99vw;
 }
 
-h1 {
-  border: var(--main-border);
-}
-
 .big-container {
-  border: var(--main-border);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -23,7 +18,6 @@ h1 {
 }
 
 .container-left {
-  border: var(--main-border);
   display: flex;
   flex-direction: column;
   width: 40vw;
@@ -36,6 +30,7 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  align-items: baseline;
 }
 
 .c1r2 {
@@ -43,23 +38,55 @@ h1 {
   flex-direction: column;
 }
 
-.leaderboard {
-  width: 35vw;
-}
-
 .scorer {
   border: var(--main-border);
-  min-width: 15rem;
+  min-width: 20rem;
   list-style: none;
   padding: 15px;
 }
 
-.container-right {
+#refreshbtn {
   border: var(--main-border);
+  box-shadow: 3px 3px black;
+  background: none;
+  height: 2rem;
+}
+
+.container-right {
   display: flex;
   flex-direction: column;
   width: 35vw;
   height: 55vh;
   justify-content: space-evenly;
   padding: 2.5vh 2.5vw;
+}
+
+#name {
+  border: var(--main-border);
+  background-color: none;
+  padding: 1rem;
+}
+
+#name::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+#score {
+  border: var(--main-border);
+  background-color: none;
+  padding: 1rem;
+}
+
+#score::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+#addbtn {
+  border: var(--main-border);
+  box-shadow: 3px 3px black;
+  background: none;
+  width: fit-content;
+  align-self: flex-end;
 }

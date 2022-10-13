@@ -12,8 +12,7 @@ class Leader {
   }
 
   static refresh() {
-    leaderboard = [];
-    UpdateLocalStorage(leaderboard);
+    localStorage.removeItem('data');
   }
 }
 
