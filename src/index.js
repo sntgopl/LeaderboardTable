@@ -15,6 +15,13 @@ addBtn.addEventListener('click', (e) => {
     nameIn.value = '';
     scoreIn.value = '';
   }, 1);
+  const msg = document.querySelector('.msg');
+  msg.style.display = 'block';
+  setTimeout(() => {
+    msg.style.display = 'none';
+  }, 1000);
 });
 
-refreshBtn.addEventListener('click', refreshList());
+refreshBtn.addEventListener('click', () => {
+  refreshList();
+});
