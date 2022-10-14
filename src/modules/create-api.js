@@ -7,6 +7,7 @@ const createGame = async () => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
+    cache: 'no-cache',
     body: JSON.stringify(gameName),
   });
   const data = await response.json();

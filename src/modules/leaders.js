@@ -1,4 +1,4 @@
-import { leaderboard } from './data.js';
+import leaderboard from './data.js';
 import { list } from './domlist.js';
 
 class Leader {

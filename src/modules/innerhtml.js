@@ -1,12 +1,15 @@
-import { leaderboard } from './data.js';
+import leaderboard from './data.js';
 import { list } from './domlist.js';
 
 const writeList = () => {
-  list.innerHTML = leaderboard[0]
-    .map((data) => `
+  list.innerHTML = '';
+  setTimeout(() => {
+    list.innerHTML = leaderboard[0]
+      .map((data) => `
     <li class="scorer">Name: ${data.user} | Score: ${data.score}</li>
   `)
-    .join(' ');
+      .join(' ');
+  }, 1000);
 };
 
 export default writeList;

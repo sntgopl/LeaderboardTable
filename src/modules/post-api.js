@@ -8,6 +8,7 @@ const addLeader = async (newLeader) => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
+    cache: 'no-cache',
     body: JSON.stringify(newLeader),
   });
   const data = await response.json();
