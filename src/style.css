@@ -38,9 +38,14 @@ body {
   flex-direction: column;
 }
 
+#leaderboard {
+  max-height: 31rem;
+  overflow-y: auto;
+}
+
 .scorer {
   border: var(--main-border);
-  min-width: 20rem;
+  max-width: 20rem;
   list-style: none;
   padding: 15px;
 }

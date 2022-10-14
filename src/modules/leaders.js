@@ -1,18 +1,19 @@
-import { leaderboard, UpdateLocalStorage } from './data.js';
+import leaderboard from './data.js';
+import { list } from './domlist.js';
 
 class Leader {
-  constructor(name, score) {
-    this.name = name;
+  constructor(user, score) {
+    this.user = user;
     this.score = score;
   }
 
   add() {
-    leaderboard.push(this);
-    UpdateLocalStorage(leaderboard);
-  }
-
-  static refresh() {
-    localStorage.removeItem('data');
+    leaderboard[0].push(this);
+    list.innerHTML = leaderboard[0]
+      .map((data) => `
+      <li class="scorer">Name: ${data.user} | Score: ${data.score}</li>
+      `)
+      .join(' ');
   }
 }
 
