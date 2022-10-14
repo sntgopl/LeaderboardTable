@@ -20,7 +20,7 @@ body {
 .container-left {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
   height: 60vh;
   align-items: center;
   justify-content: space-evenly;
@@ -40,7 +40,8 @@ body {
 
 #leaderboard {
   max-height: 31rem;
-  overflow-y: auto;
+  overflow-y: scroll;
+  max-width: 22rem;
 }
 
 .scorer {
@@ -50,11 +51,26 @@ body {
   padding: 15px;
 }
 
+.scorer:hover {
+  max-width: 20.1rem;
+  box-shadow: 5px 5px 5px black;
+  z-index: 3;
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
 #refreshbtn {
   border: var(--main-border);
   box-shadow: 3px 3px black;
   background: none;
   height: 2rem;
+}
+
+#refreshbtn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 4px 4px 5px black;
 }
 
 .container-right {
@@ -77,6 +93,16 @@ body {
   font-size: 1rem;
 }
 
+#name:hover {
+  background-color: black;
+  color: white;
+}
+
+#name:focus {
+  background-color: black;
+  color: white;
+}
+
 #score {
   border: var(--main-border);
   background-color: white;
@@ -88,10 +114,30 @@ body {
   font-size: 1rem;
 }
 
+#score:hover {
+  background-color: black;
+  color: white;
+}
+
+#score:focus {
+  background-color: black;
+  color: white;
+}
+
 #addbtn {
   border: var(--main-border);
   box-shadow: 3px 3px black;
-  background: none;
+  background-color: white;
   width: fit-content;
   align-self: flex-end;
+}
+
+#addbtn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 4px 4px 5px black;
+}
+
+.msg {
+  display: none;
 }
