@@ -20,7 +20,7 @@ body {
 .container-left {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
   height: 60vh;
   align-items: center;
   justify-content: space-evenly;
@@ -40,23 +40,24 @@ body {
 
 #leaderboard {
   max-height: 31rem;
-  overflow: auto;
+  overflow-y: scroll;
   max-width: 22rem;
 }
 
 .scorer {
   border: var(--main-border);
-  width: 20rem;
+  max-width: 20rem;
   list-style: none;
   padding: 15px;
 }
 
 .scorer:hover {
-  width: 22rem;
-  box-shadow: 15px 15px 15px black;
+  max-width: 20.1rem;
+  box-shadow: 5px 5px 5px black;
   z-index: 3;
   background-color: black;
   color: white;
+  padding: 50px 0;
 }
 
 #refreshbtn {
