@@ -2,9 +2,9 @@ import { leaderboard } from './data.js';
 import { list } from './domlist.js';
 
 const writeList = () => {
-  list.innerHTML = leaderboard
+  list.innerHTML = leaderboard[0]
     .map((data) => `
-    <li class="scorer">Name: ${data.name} | Score: ${data.score}</li>
+    <li class="scorer">Name: ${data.user} | Score: ${data.score}</li>
   `)
     .join(' ');
 };
