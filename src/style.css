@@ -24,6 +24,7 @@ body {
   height: 60vh;
   align-items: center;
   justify-content: space-evenly;
+  overflow-x: hidden;
 }
 
 .c1r1 {
@@ -41,6 +42,7 @@ body {
 #leaderboard {
   max-height: 31rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   max-width: 22rem;
 }
 
@@ -49,6 +51,7 @@ body {
   max-width: 20rem;
   list-style: none;
   padding: 15px;
+  overflow-x: hidden;
 }
 
 .scorer:hover {
@@ -57,12 +60,12 @@ body {
   z-index: 3;
   background-color: black;
   color: white;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #refreshbtn {
   border: var(--main-border);
-  box-shadow: 3px 3px black;
+  box-shadow: 2px 2px 3px black;
   background: none;
   height: 2rem;
 }
@@ -70,13 +73,13 @@ body {
 #refreshbtn:hover {
   background-color: black;
   color: white;
-  box-shadow: 4px 4px 5px black;
+  box-shadow: 5px 5px 5px black;
 }
 
 .container-right {
   display: flex;
   flex-direction: column;
-  width: 35vw;
+  width: 25vw;
   height: 55vh;
   justify-content: space-evenly;
   padding: 2.5vh 2.5vw;
